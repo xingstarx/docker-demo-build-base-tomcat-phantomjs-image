@@ -1,5 +1,7 @@
 FROM maven:3.3.3
 
+COPY phantomjs /usr/local/bin/
+
 ENV CATALINA_HOME /usr/local/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 RUN mkdir -p "$CATALINA_HOME"
